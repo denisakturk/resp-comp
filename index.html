@@ -1,49 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Comp</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="header-logo logo-container">
-            <img src="./img/logo.svg" alt="logo" class="logo-container__img">
-            <h4 class="logo-container__heading">Three Dots</h4>
-        </div>
-        <nav class="header__nav nav">
-            <ul class="nav__nav-list nav-list">
-                <li><a href="#" class="nav-list__link">Specs</a></li>
-                <li><a href="#" class="nav-list__link">Products</a></li>
-                <li><a href="#" class="nav-list__link">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header__cart cart">
-            <img src="./img/cart.svg" alt="Cart" class="cart__img">
-        </div>
+      <div class="header-logo logo-container">
+        <img src="./img/logo.svg" alt="logo" class="logo-container__img" />
+        <h4 class="logo-container__heading">Three Dots</h4>
+      </div>
+      <nav class="nav header__nav ">
+        <ul class="nav-list nav__nav-list ">
+          <li><a href="#" class="nav-list__link">Specs</a></li>
+          <li><a href="#" class="nav-list__link">Products</a></li>
+          <li><a href="#" class="nav-list__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cart header__cart ">
+        <img src="./img/cart.svg" alt="Cart" class="cart__img" />
+      </div>
     </header>
     <main>
-        <section class="presentation">
-            <div class="presentation__intro intro">
-                <div class="intro__main-heading main-heading">
-                    <h1 class="main-heading__h1">Laptop for the future</h1>
-                    <p class="main-heading__sub">
-                        The new 14 inch bezeless display oferring a 4k
-                        display with touch screen.
-                    </p>
-                </div>
-                <div class="intro__cta cta">
-                    <button class="cta__button cta__button-select">14 Inch</button>
-                    <button class="cta__button cta__button-add">Add To Cart</button>
-                </div>
+      <section class="section presentation">
+        <div class="intro presentation__intro">
+          <div class="main-heading intro__main-heading ">
+            <h1 class="main-heading__h1">Laptop for the future</h1>
+            <p class="main-heading__sub">
+              The new 14 inch bezeless display oferring a 4k display with touch
+              screen.
+            </p>
+          </div>
+          <div class="intro__cta cta">
+            <button class="cta__button-select cta__button ">14 Inch</button>
+            <button class="cta__button-add cta__button ">Add To Cart</button>
+          </div>
+        </div>
+        <div class="cover presentation__cover">
+          <img src="./img/matebook.png" alt="matebook" class="cover__img" />
+        </div>
+      </section>
+      <div class="laptop-select main__laptop-select ">
+        <img src="./img/arrow-left.svg" class="laptop-select__arrow" alt="" />
+        <img src="./img/dot.svg" alt="" />
+        <img src="./img/dot-full.svg" alt="" />
+        <img src="./img/dot-full.svg" alt="" />
+        <img src="./img/arrow-right.svg" class="laptop-select__arrow" alt="" />
+      </div>
+      <section class="main__section specs">
+        <div class="intro specs__intro">
+          <div class="main-heading intro__main-heading ">
+            <h1 class="main-heading__h1">Specs of our laptops</h1>
+          </div>
+        </div>
+        <div class="specs__description description">
+          <p class="specs__p description__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            natus itaque ipsa dolores, perspiciatis sequi incidunt, debitis
+            reprehenderit necessitatibus esse reicien
+          </p>
+        </div>
+        <div class="section__inner inner">
+          <div class="description__specs-list specs-list">
+            <div class="specs-list-item">
+              <h3 class="list-item__heading">
+                <span class="number-big">14</span>inch.
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis, laudantium numquam. Nam, exercitationem quia? At
+                odit ut nesciunt, nobis quos eaque veniam? Unde doloribus
+                similique fuga molestiae natus optio commodi.
+              </p>
             </div>
-            <div class="presentation__cover cover">
-                <img src="./img/matebook.png" alt="matebook" class="cover__img">
+            <div class="specs-list-item">
+              <h3 class="list-item__heading">
+                <span class="number-big">14</span>inch.
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis, laudantium numquam. Nam, exercitationem quia? At
+                odit ut nesciunt, nobis quos eaque veniam? Unde doloribus
+                similique fuga molestiae natus optio commodi.
+              </p>
             </div>
-        </section>
+            <div class="specs-list-item">
+              <h3 class="list-item__heading">
+                <span class="number-big">14</span>inch.
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis, laudantium numquam. Nam, exercitationem quia? At
+                odit ut nesciunt, nobis quos eaque veniam? Unde doloribus
+                similique fuga molestiae natus optio commodi.
+              </p>
+            </div>
+          </div>
+          <img src="./img/face-detection.png" alt="" />
+          <img src="./img/face-detection (1).png" alt="" />
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
