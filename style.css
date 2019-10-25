@@ -73,9 +73,13 @@ li,p{color:#585772}
 .intro__cta{align-items:center}
 }
 @media screen and (max-width:425px){
+.presentation__intro {
+    margin-top: 2vh;
+}
+.intro__cta{padding: 15px 0 0 0}
 .list-item__img{width:80%}
 .cover__img{height:71%}
-.main__laptop-select{bottom:-18%}
+.main__laptop-select{bottom:3%}
 }
 @keyframes drop{
 0%{opacity:0;transform:translate(-80px)}
