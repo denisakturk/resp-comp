@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Comp</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div class="wrapper">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Comp</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
     <header class="header">
       <div class="header-logo logo-container">
         <img src="./img/logo.svg" alt="logo" class="logo-container__img" />
@@ -25,16 +24,53 @@
           <li><a href="#contact" class="nav-list__link">Contact</a></li>
         </ul>
         <div class="ham-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
       </nav>
       <div class="cart header__cart ">
         <img src="./img/cart.svg" alt="Cart" class="cart__img" />
       </div>
+      <div class="cart__inner">
+          <div class="title">
+            Shopping Bag
+          </div>
+          <div class="ham-menu cart__ham-menu">
+            <div class="cart__line1"></div>
+            <div class="cart__line3"></div>
+          </div>
+          <div class="cart__item">
+            <!-- TODO <div class="buttons">
+              <span class="delete-btn"></span>
+              <span class="like-btn"></span>
+            </div> -->
+            <div class="item__image cover__img">
+              <img src="./img/matebook.png" alt="">
+            </div>
+            <div class="description">
+                <span>Matebook</span>
+                <span>15 inch</span>
+                <span>White</span>
+            </div>
+            <div class="quantity">
+              <button class="plus-btn" type="button" name="button">
+                <img src="plus.svg" alt="">
+              </button>
+              <input type="text" name="name" value="1">
+              <button class="minus-btn" type="button" name="button">
+                <img src="minus.svg" alt="">
+              </button>
+            </div>
+            <div class="span item__total-price">$549</div>
+          </div>
+          <div class="order-finish">
+              <button class="cta__button-add cta__button ">Add To Cart</button>
+          </div>
+      </div>
     </header>
     <main>
+      
       <section class="section presentation">
         <div class="intro presentation__intro">
           <div class="main-heading intro__main-heading ">
@@ -143,7 +179,7 @@
                   $ 2999
                 </span>
               </div>
-              
+
             </div>
             <div class="products-list-item list-item">
               <img src="./img/matebook.png" alt="" class="list-item__img" />
@@ -169,7 +205,7 @@
                   $ 2999
                 </span>
               </div>
-              
+
             </div>
             <div class="products-list-item list-item">
               <img src="./img/matebook.png" alt="" class="list-item__img" />
@@ -195,41 +231,46 @@
                   $ 2999
                 </span>
               </div>
-              
             </div>
           </div>
         </div>
       </section>
       <section class="main__section contact" id="contact">
-          <div class="intro contact__intro">
-              <div class="main-heading intro__main-heading ">
-                <h2 class="contact__heading section__heading">Contact with us</h2>
-              </div>
+        <div class="intro contact__intro">
+          <div class="main-heading intro__main-heading ">
+            <h2 class="contact__heading section__heading">Contact with us</h2>
           </div>
-          <div class="contact__description description">
-            <p class="contact__p description__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa reiciendis facilis ratione velit! Fugit ullam sit eos cupiditate quae quas est reprehenderit, saepe voluptate exercitationem deserunt sed! Aperiam, molestias!
-            </p>
-          </div>
-          <div class="section__inner inner">
-            <div class="input-container">
-              <div class="contact__input input">
-                <input type="text" required placeholder="Name">
-              </div>
-              <div class="contact__input input">
-                <input type="text" placeholder="Email" required />
-              </div>
-              <div class="contact__input input wide">
-                <input placeholder="Message" id="message" required></input>
-              </div>
-              <button class="cta__button-add cta__button contact__button">
-                  Send your message
-              </button>
+        </div>
+        <div class="contact__description description">
+          <p class="contact__p description__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa reiciendis facilis ratione
+            velit! Fugit ullam sit eos cupiditate quae quas est reprehenderit, saepe voluptate exercitationem deserunt
+            sed! Aperiam, molestias!
+          </p>
+        </div>
+        <div class="section__inner inner">
+          <div class="input-container">
+            <div class="contact__input input">
+              <input class="inputt" type="text" required placeholder="Name">
             </div>
+            <div class="contact__input input">
+              <input class="inputt" type="text" placeholder="Email" required />
+            </div>
+            <div class="contact__input input wide">
+              <input class="inputt" placeholder="Message" id="message" required></input>
+            </div>
+            <button class="cta__button-add cta__button contact__button">
+              Send your message
+            </button>
           </div>
+        </div>
       </section>
     </main>
+    <footer class="ftr">
+        <p class="ftr__text">&copy; 2019 RespComp. Design and development by <a class="ftr__link" href="https://www.github.com/denisakturk">Denis Akturk</a><p>
+    </footer>
   </div>
-    <script src="./script.js"></script>
-  </body>
+  <script src="./script.js"></script>
+</body>
+
 </html>
