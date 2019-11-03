@@ -106,9 +106,9 @@ button[class*=btn]{width:30px;height:30px;background-color:#c36cbb;border-radius
 .cover__img{height:71%;z-index:-1}
 .intro__cta{align-items:center}
 .ham-menu{display:block;cursor:pointer}
-.nav-list{position:absolute;right:0;height:100vh;width:50%;top:0;background-color:#c36cbb;display:flex;flex-direction:column;align-items:center;transform:translateX(100%);transition:transform .7s ease-in;z-index:2}
+.nav-list{position:absolute;right:0;height:100vh;width:50%;top:0;background-color:#c36cbb;display:none;flex-direction:column;align-items:center;z-index:2}
 .nav-list__link{color:#fff}
-.nav-list__active{transform:translateX(0);z-index:-1}
+/* .nav-list__active{transform:translateX(0);z-index:-1} */
 .active-line{transform:rotate(45deg) translate(0,0)}
 }
 @media screen and (max-width:425px){
